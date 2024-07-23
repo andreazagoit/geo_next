@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import mongoose from "mongoose";
 import StationModel, { StationSchema } from "../schemas/station.schema";
 
