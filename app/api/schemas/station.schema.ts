@@ -3,10 +3,10 @@ import mongoose, { Schema } from "mongoose";
 export const StationSchema = new Schema({
   id: { type: String, required: true },
   name: { type: String, required: true },
-  yearValues: [
+  values: [
     {
       year: { type: Number, required: true },
-      value: { type: Number, required: true },
+      values: { type: [Number], required: true },
     },
   ],
 });
